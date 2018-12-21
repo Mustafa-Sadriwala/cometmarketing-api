@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "post",
+  "info": {
+    "name": "post",
+    "description": "A blog post"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "default": "",
+      "type": "string"
+    },
+    "body": {
+      "default": "",
+      "type": "text"
+    },
+    "featured": {
+      "default": false,
+      "type": "boolean"
+    },
+    "author": {
+      "model": "member",
+      "via": "posts"
+    }
+  }
+}
